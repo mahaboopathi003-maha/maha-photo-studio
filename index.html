@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maha Photo Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>⚡ MAHA PHOTO STUDIO</h1>
+    <p>Cyberpunk Photo Editor</p>
+  </header>
+
+  <main>
+    <section class="editor">
+      <h2>Upload Your Photo</h2>
+      <input type="file" id="upload" accept="image/*">
+
+      <div class="preview">
+        <img id="photo" alt="Your photo preview" hidden>
+        <p id="message">Upload a photo to get started ✨</p>
+      </div>
+
+      <label>Brightness
+        <input type="range" id="brightness" min="0" max="200" value="100">
+      </label>
+
+      <label>Contrast
+        <input type="range" id="contrast" min="0" max="200" value="100">
+      </label>
+
+      <label>Saturation
+        <input type="range" id="saturation" min="0" max="200" value="100">
+      </label>
+
+      <label>Blur
+        <input type="range" id="blur" min="0" max="10" value="0">
+      </label>
+
+      <div class="buttons">
+        <button id="reset">Reset</button>
+        <button id="download">Download Photo</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
